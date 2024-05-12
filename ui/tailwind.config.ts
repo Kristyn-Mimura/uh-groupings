@@ -28,7 +28,10 @@ const config = {
                 'seafoam': '#e3f2ef',
                 'text-color': '#1c6070',
                 'link-color' : '#006ffa',
-                'link-hover-color' : '#0056b3'
+                'link-hover-color' : '#0056b3',
+                'light-grey': '#f2f2f2',
+                'pagination-hover': '#c7e7e0',
+                'dark-grey': '#4d545b',
             },
             fontFamily: {
                 'source-sans-3': ['var(--font-source-sans-3)', 'Helvetica', 'Arial', 'sans-serif'],
@@ -46,7 +49,7 @@ const config = {
             animation: {
                 'accordion-down': 'accordion-down 0.2s ease-out',
                 'accordion-up': 'accordion-up 0.2s ease-out',
-            },
+            }
         },
         screens: {
             'sm': '576px',

@@ -1,5 +1,10 @@
-const Groupings = () => {
-    return ( 
+import GroupingsTable from '@/components/table/GroupingsTable'
+import {getAllGroupings, ownerGroupings} from '@/services/GroupingsApiService';
+
+const Groupings = async () => {
+    const res = await ownerGroupings();
+    const currentGroupings = res.groupingPaths;
+    return (
         <main>
             <div className="bg-seafoam pt-3">
                 <div className="container">
@@ -12,11 +17,11 @@ const Groupings = () => {
                 <div className="bg-white">
                     <div className="container">
                         {/* GroupingsTable goes here */}
+                        <GroupingsTable data={currentGroupings}/>
                     </div>
                 </div>
             </div>
         </main>
     );
 }
- 
 export default Groupings;
